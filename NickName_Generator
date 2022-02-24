@@ -1,0 +1,16 @@
+# Random Nickname Generator 
+print ("Welcome to the gaming nickname generator")
+first_name = input("Please type your first name\n")
+last_name = input ("Please type your last name \n")
+#here we count the length of the strings
+n1 = len (first_name)
+n2 = len (last_name)
+#import random function
+import random
+a = random.randint(1,n1)
+b = random.randint(1,n2)
+#use the values of random funcion as a string slicer
+nick1 = slice (0,n1//a)
+nick2 = slice (0,n2//b)
+#and print the results
+print ("Your gaming nickname is: "+first_name[nick1] +last_name[nick2])
